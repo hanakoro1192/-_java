@@ -1,0 +1,5 @@
+
+interface Bombedinterface {
+
+    void exposure();
+}

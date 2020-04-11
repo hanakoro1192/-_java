@@ -2,16 +2,15 @@
 public class Bomb { //ボンバーマンのクラス
     //フォールドの設定
     String name;
-    String sex;
-    int old;
 
     //コンストラクタ　初期化を行った
-    public Bomb(String name, String sex, int old){
+    public Bomb(String name){
         this.name = name;
-        this.sex = sex;
-        this.old = old;
     };
 
     //メソッドの作成
+    public void moment(){
+        //処理の記入
+    }
     
 }
