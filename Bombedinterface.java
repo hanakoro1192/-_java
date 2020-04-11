@@ -1,5 +1,5 @@
 
 interface Bombedinterface {
 
-    void exposure();
+    public void exposure();
 }

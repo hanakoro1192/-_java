@@ -1,5 +1,5 @@
 
-public abstract class BombedAbstract extends Bomb implements Bombed{
+public abstract class BombedAbstract extends Bomb implements Bombedinterface{
 
     //フィールドなし
 
