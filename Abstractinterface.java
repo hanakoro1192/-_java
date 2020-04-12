@@ -1,4 +1,4 @@
-
+//抽象インターフェース
 public abstract class Abstractinterface {
 
     abstract public void draw(); //BombedAbstractのメソッド
