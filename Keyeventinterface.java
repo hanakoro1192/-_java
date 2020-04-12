@@ -1,0 +1,4 @@
+//キーイベントインターフェース
+interface Keyeventinterface {
+
+}

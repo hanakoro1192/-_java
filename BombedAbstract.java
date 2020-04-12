@@ -1,7 +1,12 @@
 
-public abstract class BombedAbstract extends Bomb implements Bombedinterface{
+public abstract class Bombedabstract implements Bombedinterface{
 
     //フィールドなし
+
+    //コンストラクタの設定；ここは必要なのでしょうか？
+    public Bombedabstract(){
+        //中の処理
+    }
 
     public void exposure(){
         //処理の記入

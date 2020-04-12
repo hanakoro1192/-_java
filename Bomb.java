@@ -1,5 +1,5 @@
 
-public class Bomb { //ボンバーマンのクラス
+public class Bomb extends Bombedabstract { //ボンバーマンのクラス
     //フォールドの設定
     String name;
 

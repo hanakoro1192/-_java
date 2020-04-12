@@ -1,8 +1,8 @@
 //FieldはBombedAbstractの集約(依存関係が成り立つ)
-public class Field {
+public class Field {
 
     //フィールド:依存関係
-    BombedAbstract field;
+    Bombedabstract field;
 
     //メソッド1
     public void cubic(){
