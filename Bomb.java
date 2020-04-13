@@ -2,11 +2,11 @@
 public class Bomb {
 
     //フィールドの作成
-    Field bomb;
+    String name;
 
     //メソッド：爆弾が爆発するメソッド
     public void explosion(){
         //爆弾が爆発したときの処理
     }
-    
+
 }

@@ -1,6 +1,8 @@
 //FieldはBombedAbstractの集約(依存関係が成り立つ)
 public class Field {
 
+    Bomb bomb;
+
     //フィールド:依存関係
     Bombedabstract field;
 
