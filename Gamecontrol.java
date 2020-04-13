@@ -4,6 +4,8 @@ import java.awt.event.KeyListener;
 //ゲームコントロールクラス；Gamecontrolクラスはボンバーマンに依存している
 public class GameControl implements KeyListener {
 
+    //今後はフィールドキーの追加をおナウ
+
     //メソッド：ゲームリセット！！の処理
     public void reset(){
         //リセットするときの処理
