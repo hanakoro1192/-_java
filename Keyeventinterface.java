@@ -1,4 +1,0 @@
-//キーイベントインターフェース
-interface Keyeventinterface {
-
-}

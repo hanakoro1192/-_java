@@ -1,16 +1,12 @@
+//爆弾クラス：BombはFieldラスに依存している
+public class Bomb {
 
-public class Bomb extends Bombedabstract { //ボンバーマンのクラス
-    //フォールドの設定
+    //フィールドの作成
     String name;
 
-    //コンストラクタ　初期化を行った
-    public Bomb(String name){
-        this.name = name;
-    };
-
-    //メソッドの作成
-    public void moment(){
-        //処理の記入
+    //メソッド：爆弾が爆発するメソッド
+    public void explosion(){
+        //爆弾が爆発したときの処理
     }
-    
+
 }

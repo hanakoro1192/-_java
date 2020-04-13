@@ -1,5 +1,4 @@
-
-public abstract class Abstractinterface {
+public abstract class AbstractBombedInterface {
 
     abstract public void draw(); //BombedAbstractのメソッド
     
