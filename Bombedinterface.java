@@ -1,5 +1,5 @@
 //被爆インターフェース
-interface Bombedinterface {
+interface BombedInterface {
 
     public void exposure();
 }
