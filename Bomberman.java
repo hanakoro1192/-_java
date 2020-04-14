@@ -1,5 +1,5 @@
 //ボンバーマンクラス
-public class Bomberman extends Bombedabstract{ //ボンバーマンのクラス
+public class Bomberman extends BombedAbstract{ //ボンバーマンのクラス
 
     //集約を使用
     Item item;

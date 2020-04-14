@@ -4,7 +4,7 @@ public class Field {
     Bomb bomb;
 
     //フィールド:依存関係
-    Bombedabstract field;
+    BombedAbstract field;
 
     //メソッド1
     public void cubic(){
