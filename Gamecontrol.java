@@ -30,12 +30,12 @@ public class GameControl extends JFrame implements KeyListener {
     }
 
     //上に移動する
-    public void accelerateUp(double vx){
+    public void accelerateUp(){
         vy = -SPEED;
     }
 
     //右に移動する
-    public void accelerateDown(double vy) {
+    public void accelerateDown() {
         vy = SPEED;
     }
 
@@ -51,7 +51,7 @@ public class GameControl extends JFrame implements KeyListener {
 
     //動きがストップ
     public void Stop(){
-
+        
     }
 
     //キーを押した時に呼び出されるメソッド：ここにボタンを押したときの右、左、↑、↓の処理を入れる
@@ -60,22 +60,21 @@ public class GameControl extends JFrame implements KeyListener {
         switch(e.getKeyCode()){
             case KeyEvent.VK_UP : //矢印キーの上
                 //上のキー
-                accelerateLeft();
+                accelerateUp();
                 break;
-            case KeyEvent.VK_DOWN; //矢印キーの下
+            case KeyEvent.VK_DOWN: //矢印キーの下
                 //下のキー
-                System.out.println("上が押されました");
+                accelerateDown();
                 break;
-            case KeyEvent.VK_RIGHT; //矢印キーの右
+            case KeyEvent.VK_RIGHT: //矢印キーの右
                 //右のキー
                 accelerateRight(); 
                 break;
-            case KeyEvent.VK_LEFT; //矢印キーの左
+            case KeyEvent.VK_LEFT: //矢印キーの左
                 //左のキー
                 accelerateLeft();
                 break;
         }
-
     }
     
     //キーが離された時に呼び出されるメソッド
@@ -83,22 +82,24 @@ public class GameControl extends JFrame implements KeyListener {
         switch(e.getKeyCode()){
             case KeyEvent.VK_UP : //矢印キーの上
                 //上のキー
-                System.out.println("上が離れる");
+                Stop();
                 break;
-            case KeyEvent.VK_DOWN; //矢印キーの下
+            case KeyEvent.VK_DOWN: //矢印キーの下
                 //下のキー
-                System.out.println("下が離れる");
+                Stop();
                 break;
-            case KeyEvent.VK_RIGHT; //矢印キーの右
+            case KeyEvent.VK_RIGHT: //矢印キーの右
                 //右のキー
-                System.out.println("右が離れる");
+                Stop();
                 break;
-            case KeyEvent.VK_LEFT; //矢印キーの左
+            case KeyEvent.VK_LEFT: //矢印キーの左
                 //左のキー
-                System.out.println("左が離れる");
+                Stop();
                 break;
+        }
     }
     
+
     //使用しないため殻にしておく
     public void keyTyped(KeyEvent e) {
         //使用しないので空にする.
@@ -118,5 +119,3 @@ public class GameControl extends JFrame implements KeyListener {
     public void gameover(){
 
     }
-
-}
