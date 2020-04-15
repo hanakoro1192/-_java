@@ -1,6 +1,6 @@
 //アイテムクラス：アイテムクラスはボンバーマンに依存しているため集約
 //被爆抽象クラスを継承している
-public class Item extends Bombedabstract {
+public class Item extends BombedAbstract {
 
     //メソッド：アイテムを取得する
     public void gain(){

@@ -6,10 +6,10 @@ import javax.swing.JFrame; //デスクトップアプリケーションのため
 //ゲームコントロールクラス；Gamecontrolクラスはボンバーマンに依存している
 public class GameControl extends JFrame implements KeyListener {
 
-    //集約を利用
-    Bomberman bomberman;
+    private double SPEED = 0;
 
-    private int keyCode = 0;
+	//集約を利用
+    Bomberman bomberman;
 
     //位置
     double x; // 左右の移動
@@ -51,7 +51,12 @@ public class GameControl extends JFrame implements KeyListener {
 
     //動きがストップ
     public void Stop(){
-        
+        //休止：
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     //キーを押した時に呼び出されるメソッド：ここにボタンを押したときの右、左、↑、↓の処理を入れる
@@ -117,5 +122,6 @@ public class GameControl extends JFrame implements KeyListener {
 
     //メソッド：ゲームオーバーのときの処理
     public void gameover(){
-
+        
     }
+}

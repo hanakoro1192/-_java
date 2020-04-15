@@ -1,5 +1,5 @@
 
-public abstract class Bombedabstract implements Bombedinterface{
+public abstract class BombedAbstract implements BombedInterface{
 
     //フィールドなし
 
